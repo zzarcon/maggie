@@ -1,0 +1,38 @@
+{
+  "name": "maggie",
+  "version": "0.1.0",
+  "description": "Get precious image info from an input file",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel serve watch",
+    "watch": "watchify demo/app.js -o demo/bundle.js -t [ babelify --presets [ es2015 ] ",
+    "serve": "serve",
+    "lint": "eslint ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzarcon/maggie.git"
+  },
+  "author": "zzarcon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zzarcon/maggie/issues"
+  },
+  "homepage": "https://github.com/zzarcon/maggie#readme",
+  "devDependencies": {
+    "babel-core": "^6.7.2",
+    "babel-eslint": "^6.0.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "eslint": "^2.12.0",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "npm-run-all": "^2.1.1",
+    "serve": "^1.4.0",
+    "watchify": "^3.7.0"
+  },
+  "browserify": {
+    "transform": [["babelify", { "presets": ["es2015"] }]]
+  }
+}
