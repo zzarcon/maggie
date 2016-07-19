@@ -1,6 +1,6 @@
 {
   "name": "maggie",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Get precious image info from an input file",
   "main": "src/index.js",
   "scripts": {
@@ -33,6 +33,15 @@
     "watchify": "^3.7.0"
   },
   "browserify": {
-    "transform": [["babelify", { "presets": ["es2015"] }]]
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ]
+        }
+      ]
+    ]
   }
 }
