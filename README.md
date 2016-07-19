@@ -1,9 +1,15 @@
-<div style="text-align:center"><img src="http://data.whicdn.com/images/238618455/large.gif" /></div>
+<img src="http://data.whicdn.com/images/238618455/large.gif" align="right" />
 
-#maggie
+#Maggie
 > :sunrise: Get precious image info from an input file
 
 This module does one thing right, returns information about the image selected in a html input file.
+
+###Install
+
+```
+$ npm i maggie -S
+```
 
 ###Examples
 
