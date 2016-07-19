@@ -7,7 +7,8 @@
     "start": "npm-run-all --parallel serve watch",
     "watch": "watchify demo/app.js -o demo/bundle.js -t [ babelify --presets [ es2015 ] ",
     "serve": "serve",
-    "lint": "eslint ./src"
+    "lint": "eslint ./src",
+    "release": "npm version patch && git push --tags && git push"
   },
   "repository": {
     "type": "git",
